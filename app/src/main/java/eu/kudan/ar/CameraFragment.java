@@ -142,7 +142,7 @@ public class CameraFragment extends Fragment implements SensorEventListener {
     /**
      * Dimensions of the camera preview.
      */
-    private Size mCameraPreviewSize = new Size(1280, 800);
+    private Size mCameraPreviewSize = new Size(1280, 960);
 
     /**
      * A Semaphore to prevent the camera simultaneously opening and closing.
