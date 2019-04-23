@@ -2,6 +2,10 @@
 # Created by https://www.gitignore.io/api/macos,swift,xcode,windows,android,jetbrains,visualstudio,androidstudio,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=macos,swift,xcode,windows,android,jetbrains,visualstudio,androidstudio,visualstudiocode
 
+### Original ###
+# CV header file
+app/libs/KudanCV/include/KudanCV\.h
+
 ### Android ###
 # Built application files
 *.apk

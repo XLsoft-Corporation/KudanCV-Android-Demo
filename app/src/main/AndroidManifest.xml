@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme">
 
         <meta-data
-            android:name="eu.kudan.ar.API_KEY"
+            android:name="com.xlsoft.kudancv.API_KEY"
             android:value="">
         </meta-data>
 
