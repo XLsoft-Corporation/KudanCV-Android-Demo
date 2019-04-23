@@ -1,30 +1,36 @@
 # KudanCV - Android Demo
-* * *
-This repository contains an Android Studio project with example code for an application that uses the KudanCV standalone library to perform image-based and markerless tracking of objects viewed by the camera.
 
-This code uses the `android.hardware.camera2` package and as such requires at least Android 5.0 to run. Similar results can be achieved using the deprecated `Camera` class if legacy support is required.
+このリポジトリには、KudanCV スタンドアロンライブラリを使用して、カメラで見たオブジェクトの画像ベースおよびマーカーレスのトラッキングを実行するサンプルアプリケーションの Android Studio プロジェクトが含まれています。
 
-## Working with Source
-___
+このコードは `android.hardware.camera2` パッケージを使用しているため、実行するには Android 5.0 以上のデバイスが必要です。従来のサポートが必要な場合は、非推奨の `Camera` クラスを使用しても同様の結果が得られます。
 
-- Clone the project.
-- Download the latest KudanCV release.
-- Place the `.so` library files into their appropriate, newly-created ABI directory at:  
-  
-	`app/libs/KudanCV/bin/<abi>/libKudanCV.so`
+## 利用方法
+
+- プロジェクトをクローンします。
+
+- [エクセルソフトの Kudan ダウンロードページ](https://www.xlsoft.com/jp/products/kudan/download.html?utm_source=%E5%A4%96%E9%83%A8%E3%82%B5%E3%82%A4%E3%83%88&utm_medium=github_xlsoft&utm_campaign=KudanCV-Android-Demo) から最新の KudanCV ライブラリのダウンロードをお申し込みください。
+  - 入手した `KudanCVSDK-Android.zip` を展開し、`KudanCV.h`、`arm64-v8a/libKudanCV.so`、`armeabi-v7a/libKudanCV.so`、`x86//libKudanCV.so` があることを確認します。
+
+- `app` 以下に `libs/KudanCV/bin` ディレクトリを作成し、以下のディレクトリ構造になるように `.so` ライブラリファイルを ABI ディレクトリごと配置します。
+  - `app/libs/KudanCV/bin/arm64-v8a/libKudanCV.so`
+  - `app/libs/KudanCV/bin/armeabi-v7a/libKudanCV.so`
+  - `app/libs/KudanCV/bin/x86/libKudanCV.so`
+
+- `app` 以下に `libs/KudanCV/include` ディレクトリを作成し、`KudanCV.h` を配置します。
+
+- [エクセルソフトの Kudan ダウンロードページ](https://www.xlsoft.com/jp/products/kudan/download.html?utm_source=%E5%A4%96%E9%83%A8%E3%82%B5%E3%82%A4%E3%83%88&utm_medium=github_xlsoft&utm_campaign=KudanCV-Android-Demo)から、開発用ライセンスキーを入手し、`AndroidManifest.xml` の `com.xlsoft.kudancv.API_KEY` の value に入力してください。
+
+```xml
+<meta-data
+    android:name="com.xlsoft.kudancv.API_KEY"
+    android:value="">
+</meta-data>
+```
+
+- ビルドして実行します。
 
 
-- Place the header files into a newly-created directory at:
+## エクセルソフトについて
 
+エクセルソフトは Kudan AR/CV SDK の販売代理店です。ライブラリに関するお問い合わせ、価格に関するお問い合わせはお気軽に [お問合せフォーム](https://www.xlsoft.com/jp/services/xlsoft_form.html?option2=Kudan&utm_source=%E5%A4%96%E9%83%A8%E3%82%B5%E3%82%A4%E3%83%88&utm_medium=github_xlsoft&utm_campaign=KudanCV-Android-Demo) よりお寄せ下さい。
 
-	`app/libs/KudanCV/include`
-
-- Copy the development license key from [Kudan wiki](https://wiki.kudan.eu/Development_License_Keys) and add it to the `AndroidManifest.xml`to the value of `eu.kudan.ar.API_KEY`
-
-		<meta-data
-            android:name="eu.kudan.ar.API_KEY"
-            android:value="LICENSE_KEY_HERE">
-        </meta-data>
-
-
-- Build and run the project.
