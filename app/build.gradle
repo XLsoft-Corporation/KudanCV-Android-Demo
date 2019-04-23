@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 23
     defaultConfig {
-        applicationId "eu.kudan.ar"
+        applicationId "com.xlsoft.kudancv"
         minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
