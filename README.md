@@ -1,5 +1,7 @@
 # KudanCV - Android Demo
 
+[English Readme is here](./README_en.md)
+
 このリポジトリには、KudanCV スタンドアロンライブラリを使用して、カメラで見たオブジェクトの画像ベースおよびマーカーレスのトラッキングを実行するサンプルアプリケーションの Android Studio プロジェクトが含まれています。
 
 このコードは `android.hardware.camera2` パッケージを使用しているため、実行するには Android 5.0 以上のデバイスが必要です。従来のサポートが必要な場合は、非推奨の `Camera` クラスを使用しても同様の結果が得られます。
