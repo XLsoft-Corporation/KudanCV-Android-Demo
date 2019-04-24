@@ -6,6 +6,7 @@
 
 このコードは `android.hardware.camera2` パッケージを使用しているため、実行するには Android 5.0 以上のデバイスが必要です。従来のサポートが必要な場合は、非推奨の `Camera` クラスを使用しても同様の結果が得られます。
 
+
 ## 利用方法
 
 - プロジェクトをクローンします。
@@ -31,6 +32,30 @@
 
 - ビルドして実行します。
 
+
+## 注意点
+
+### NDK について
+
+2019年4月時点の KudanCV ライブラリの仕様で、NDK 15c **以下** が必要になります。以下から「Android NDK, Revision 15c (July 2017)」をダウンロードし、任意のフォルダに展開してください。
+
+[NDK Archives  \|  Android NDK  \|  Android Developers](https://developer.android.com/ndk/downloads/older_releases)
+
+プロジェクトごとに NDK の場所を指定できるので、プロジェクトを開いたら、Android Studio　のメニューから「File＞Project Structure」を開き、「SDK Location＞Android NDK location」を展開したフォルダに指定します。
+
+<img src="./ndk_location_mac.png" width="450" />
+
+<img src="./ndk_location_win.png" width="450" />
+
+### Emulator について
+
+x86 用のバイナリがあるので、Emulator のカメラでもテストできますが、Emulator 上のカメラアプリで PC のカメラ画像を取得できる状態に設定してください。
+
+<img src="./emulator_mac.png" width="450" />
+
+<img src="./emulator_camera_mac.png" width="450" />
+
+例えばこんな感じです。（写真は [@ytabuchi](https://twitter.com/ytabuchi) ですw）
 
 ## エクセルソフトについて
 
