@@ -11,8 +11,8 @@
 
 - プロジェクトをクローンします。
 
-- [エクセルソフトの Kudan ダウンロードページ](https://www.xlsoft.com/jp/products/kudan/download.html?utm_source=%E5%A4%96%E9%83%A8%E3%82%B5%E3%82%A4%E3%83%88&utm_medium=github_xlsoft&utm_campaign=KudanCV-Android-Demo) から最新の KudanCV ライブラリのダウンロードをお申し込みください。
-  - 入手した `KudanCVSDK-Android.zip` を展開し、`KudanCV.h`、`arm64-v8a/libKudanCV.so`、`armeabi-v7a/libKudanCV.so`、`x86//libKudanCV.so` があることを確認します。
+- [エクセルソフトの Kudan ダウンロードページ](https://www.xlsoft.com/jp/products/kudan/download.html?utm_source=external&utm_medium=github&utm_campaign=xlsoft_KudanCV-Android-Demo) から最新の KudanCV ライブラリのダウンロードをお申し込みください。
+  - 入手した `KudanCVSDK-Android.zip` を展開し、`KudanCV.h`、`arm64-v8a/libKudanCV.so`、`armeabi-v7a/libKudanCV.so`、`x86/libKudanCV.so` があることを確認します。
 
 - `app` 以下に `libs/KudanCV/bin` ディレクトリを作成し、以下のディレクトリ構造になるように `.so` ライブラリファイルを ABI ディレクトリごと配置します。
   - `app/libs/KudanCV/bin/arm64-v8a/libKudanCV.so`
@@ -21,7 +21,7 @@
 
 - `app` 以下に `libs/KudanCV/include` ディレクトリを作成し、`KudanCV.h` を配置します。
 
-- [エクセルソフトの Kudan ダウンロードページ](https://www.xlsoft.com/jp/products/kudan/download.html?utm_source=%E5%A4%96%E9%83%A8%E3%82%B5%E3%82%A4%E3%83%88&utm_medium=github_xlsoft&utm_campaign=KudanCV-Android-Demo)から、開発用ライセンスキーを入手し、`AndroidManifest.xml` の `com.xlsoft.kudancv.API_KEY` の value に入力してください。
+- [エクセルソフトの Kudan ダウンロードページ](https://www.xlsoft.com/jp/products/kudan/download.html?utm_source=external&utm_medium=github&utm_campaign=xlsoft_KudanCV-Android-Demo)から、開発用ライセンスキーを入手し、`AndroidManifest.xml` の `com.xlsoft.kudancv.API_KEY` の value に入力してください。
 
 ```xml
 <meta-data
@@ -53,11 +53,9 @@ x86 用のバイナリがあるので、Emulator のカメラでもテストで�
 
 <img src="./emulator_mac.png" width="450" />
 
-<img src="./emulator_camera_mac.png" width="450" />
 
-例えばこんな感じです。（写真は [@ytabuchi](https://twitter.com/ytabuchi) ですw）
 
 ## エクセルソフトについて
 
-エクセルソフトは Kudan AR/CV SDK の販売代理店です。ライブラリに関するお問い合わせ、価格に関するお問い合わせはお気軽に [お問合せフォーム](https://www.xlsoft.com/jp/services/xlsoft_form.html?option2=Kudan&utm_source=%E5%A4%96%E9%83%A8%E3%82%B5%E3%82%A4%E3%83%88&utm_medium=github_xlsoft&utm_campaign=KudanCV-Android-Demo) よりお寄せ下さい。
+エクセルソフトは Kudan AR/CV SDK の販売代理店です。ライブラリに関するお問い合わせ、価格に関するお問い合わせはお気軽に [お問合せフォーム](https://www.xlsoft.com/jp/services/xlsoft_form.html?option2=Kudan&utm_source=external&utm_medium=github&utm_campaign=xlsoft_KudanCV-Android-Demo) よりお寄せ下さい。
 
