@@ -19,6 +19,10 @@
     },
     {
       "level": "INFO",
+      "message": "NDK side-by-side folder from sdkFolder /Applications/Android-SDK/ndk does not exist"
+    },
+    {
+      "level": "INFO",
       "message": "Considering /Users/ytabuchi/Downloads/android-ndk-r15c by ndk.dir"
     },
     {
